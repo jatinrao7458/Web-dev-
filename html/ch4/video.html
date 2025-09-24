@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANALI WALE</title>
+</head>
+<style>
+    body {
+        background: linear-gradient(to right, #ffecd2, #fcb69f);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px;
+        color: #b80f0f;
+    }
+
+    h1 {
+        text-align: center;
+        color: #c0392b;
+        margin-bottom: 30px;
+        font-size: 2em;
+        text-shadow: 1px 1px #fff;
+    }
+
+    form {
+        background-color: #ffffffcc;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 25px 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+    div {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #8e581e;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="password"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 2px solid #3498db;
+        border-radius: 8px;
+        font-size: 1em;
+        background-color: #e6f4fb;
+        color: #2c502e;
+    }
+
+    select {
+        background-color: #e8f4f8;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    button {
+        background-color: #e91e63;
+        color: white;
+        padding: 12px 20px;
+        font-size: 1em;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #c2185b;
+    }
+
+    option {
+        background-color: #ffffff;
+        color: #2c3e50;
+    }
+</style>
+
+<body>
+    <h1>travell form - MANALI WALE</h1>
+    <form action="//submit" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name" required>
+        </div>
+
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" placeholder="Enter number" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter email" required>
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+        </div>
+
+        <div>
+            <label for="gender">Gender:</label>
+            <select id="gender" required>
+                <option value="" disabled selected>Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="others">Others</option>
+            </select>
+        </div>
+
+        <div>
+            <p><strong>Select Plan:</strong></p>
+            <label for="basic">Basic</label>
+            <input type="radio" name="plans" id="basic">
+
+            <label for="premium">Premium</label>
+            <input type="radio" name="plans" id="premium">
+
+            <label for="vip">VIP</label>
+            <input type="radio" name="plans" id="vip">
+        </div>
+
+        <div>
+            <label for="checkbox">Accept all terms and conditions</label>
+            <input type="checkbox" id="checkbox" required>
+        </div>
+
+        <div>
+            <label for="comments">Query:</label>
+            <textarea id="comments" rows="4" placeholder="Enter your query"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

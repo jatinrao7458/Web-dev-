@@ -3,6 +3,7 @@ let car = {
     Year_of_production : 2011,
     owner : "Jatin yadav",
     }
+//there is a diff between maps and object ,in object it print the keys in aplhabetical order when we inspect a webpage, but a map displays the same order in which its added 
 // accesing values
 // dot notation
 console.log(car.name)

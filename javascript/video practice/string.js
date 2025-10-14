@@ -6,7 +6,9 @@ console.log(a [2])
 console.log(a [3])
 console.log(a [4])
 // console.log(a [5])
+// we can target diff-diff character in string and array using indexing, the above steps are indexing
 console.log(a.length)
+// .length tells the number of character present 
 let name= "harry"
 let frnd ="jatin"
 console.log(" his name is " + name + " and his frnd name is " + frnd)

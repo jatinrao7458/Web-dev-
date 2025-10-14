@@ -6,7 +6,8 @@ function nice(name) {
 
 }
 // this code means that there is a function then ,define the name of function(nice) then in the ( ) define the parameters  like where to make changes
-
+// to add object as parameter we have to add {} the syntax will be like 
+// function nice({name})
 nice("mukul")
 nice("shivam")
 //  works like that in nice replace thre perameter name with  ("xyz")

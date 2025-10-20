@@ -1,4 +1,5 @@
 let arr =[1, 4, 5 ,5]
+// array are mutable i.e after the function in 3rd line it will change the original array 
 console.log(arr.toString())
 arr[0 ]= 233
 // console.log(arr)

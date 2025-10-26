@@ -9,6 +9,9 @@ let a1= [4,3,5,6]
 let a2=[1,9,8,7]
 let a3= [4,6,8,9] 
 console.log(a1.concat(a2,a3))
+// concat joins to diff array with each other 
 console.log(a1.sort())
+// line 13 sort means to arrange according to the number 
+// for array both slice and splice work for it 
 a1.splice(0,2)
 console.log(a1)

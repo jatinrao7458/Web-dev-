@@ -1,9 +1,10 @@
 let a= [1,53,5,6,88]
+// code in line 3 is a basic for loop
 for (let index = 0; index <a.length; index++) {
     const element =a[index];
-    
     console.log(element)
 }
+// code in line 8 tells that perform for each loop in the array a and print its value , index and arr
 a.forEach((value, index,arr)=> {
     console.log(value,index,arr)
 });

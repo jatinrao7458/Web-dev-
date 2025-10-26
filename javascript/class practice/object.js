@@ -21,4 +21,18 @@ console.log(car)
 console.log(Object.keys(car))
 console.log(Object.values(car))
 console.log(Object.entries(car))
-
+// we can merge 2  diff object with each other by 2 ways
+let a = {
+    Name: 'jatin',
+    Age: "18"
+}
+let b ={
+    Age: "19",
+    City: "Delhi"
+}
+// method 1
+let c = {...a,...b}
+console.log(c)
+// method 2
+let d = Object.assign({},a,b)
+// these 2 methods are shallow methos that is they overwrite the value of same key as we show in case of age 

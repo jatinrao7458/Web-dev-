@@ -1,6 +1,6 @@
 let arr =[12,44,66,76,45]
 //when we have to make a new array using the old array we use the map function 
-//we have to make a new array which square of fisrt array
+//we have to make a new array which is square of fisrt array
 
 //using for loop
 let len=arr.length
@@ -15,9 +15,9 @@ console.log(newarr)
 let anotherarr=arr.map((e)=>{
     return e**2
 })
-console.log(anotherarr)
-//map function acts on all the array elements (i.e its used on array) (like map function as a loop that itself iterate sit to  antother array element) 
-// in thi sexample we made the function after using map we can also mak efunction intially and do it later (like if we have a function name "square" the the syntax would have been "let anotherarr=arr.map(square)")
+console.log(anotherarr)                                     
+//map function acts on all the array elements (i.e its used on array) (like map function as a loop that itself iterate sit to  another array element) 
+// in this example we made the function after using map we can also make function intially and do it later (like if we have a function name "square" the the syntax would have been "let anotherarr=arr.map(square)")
 
 //filter
 //in this also we can first declare the function then perform filter 

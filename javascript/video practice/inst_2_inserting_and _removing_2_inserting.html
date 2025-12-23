@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 30px;
+            border: 2px solid black;
+        }
+        .new{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container finally new beginnhing ">
+        <div class="box1 " style="color: aqua;" data-createdby="harry">box</div>
+        <!-- this "data-" is ignored while printing in console -->
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+    </div>
+    <script>
+        // this methd is for the nodes we cannot change the html we changes the whole node with it 
+
+
+        let dii = document.createElement("div")
+        dii.innerHTML = "I am inserted by defineing a variable using append"//we can only use one of the property at once to append,prepend,replacewith,before,after for one specific variale
+        dii.setAttribute("class", "created")
+        document.querySelector(".container").append(dii)// if anything written in these" " then it will be taken as a string.
+        //append adds element to the end of the parent elemnt(end of the node i.e the elemnt node over here)
+        document.querySelector(".container").prepend("<div> i am prepended </div>                                        .")
+        //prepend adds elemnt at beginiing of the node i.e append and prepend are the parts of node 
+        document.querySelector(".container").after("<div> i m inserted after the node </div>")
+        // using after we can add data after the node i.e here this data is not the parrt of the div
+        document.querySelector(".container").before("i m inserted before the node ")
+        // using before we can add data before the node i.e here this data is not the parrt of the div
+
+        document.querySelector(".box1").replaceWith("i have replaced 1 box i.e box 1 ")
+        // it replaces the whole node and creates a new one with he data provided
+
+        // this method will help u add html this methofd will make a new html element
+        let cont = document.querySelector(".container")
+        cont.insertAdjacentHTML("afterend", "<div>THis added by using afterend property</div>")
+        //means inserted after ending of the element i.e outside the element
+        cont.insertAdjacentHTML("afterbegin", "<div>THis added by using afterbegin property</div>")
+        //means inserted after beginning of the element i.e inside the element
+
+        cont.insertAdjacentHTML("beforeend", "<div>THis added by using beforeend property</div>")
+        //means inserted before ending of the element i.e inside the element
+        cont.insertAdjacentHTML("beforebegin", "<div>THis added by using beforebegin property</div>")
+        //means insertedbefore beginning  of the element i.e outside the element
+
+        //.remove help us remove tthe node from the document
+        document.querySelector(".box").remove()
+        // after this action there will be only 3 boxes left
+        let callsss = document.querySelector(".container").classList
+        // give us the list of class present in that elemnt 
+        let callsssd = document.querySelector(".container").className
+        // give us the name of the classes
+        console.log(callsssd)
+        console.log(callsss)
+        document.querySelector(".container").classList.add("Jatin")
+        // class list.add makes a new class named in the paremeter of this 
+        //same class name can only  be added once
+        console.log(callsss)
+        document.querySelector(".container").classList.remove("Jatin")
+        // class list.remove a class named in the paremeter of this 
+
+        console.log(callsss)
+        document.querySelector(".container").classList.remove("new")
+        console.log(callsss)
+        document.querySelector(".container").classList.toggle("new")
+        //togle works like a switch , like if an class is absent it is added, if a class is present its removed
+        // we can check its working will adding this code in  line 77 in the console of web browser
+
+
+
+    </script>
+</body>
+
+</html>

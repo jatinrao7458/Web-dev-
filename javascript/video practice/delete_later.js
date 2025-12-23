@@ -1,1 +1,0 @@
-let a = prompt("enter a number");

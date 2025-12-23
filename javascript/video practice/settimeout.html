@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        padding: 10px;
+        border: 2px solid black;
+    }
+
+    .parent {
+        padding: 10px;
+        border: 2px solid black;
+    }
+
+    .child {
+        padding: 10px;
+        border: 2px solid black;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="parent">
+            <div class="child">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    //set interval is a function which carriesa a function which  is excuted after the interval mentained in the set interval
+    setInterval(() => {
+        document.querySelector(".parent").setAttribute("style", "background-color:red;")
+    }, 3000);
+    // we can stop this set interval using clear interval
+    // diff btw set intervaland set timeout is that settimeout runs only once but setinterval keeps on running regularly after that interval of time
+    setTimeout(() => {
+        document.querySelector(".child").setAttribute("style", "background-color:blue;")
+    }, 5000);
+    // we can stop this set timeout using clear timeout
+</script>
+
+</html>

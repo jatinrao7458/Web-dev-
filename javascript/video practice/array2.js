@@ -20,7 +20,7 @@ for (const i in obj) {
 }                                                                                                                 
 // The hasOwnProperty() method is not a "tag" for a loop but a function used to check if a property is a direct member of an object 
 //THE loop in line 1 is a "for in" loop which is mainly used in  the contaxt of a object  like we "first define a variable" in "object name" 
-//the line 14 is the default line but htis line check wheter the obj element are the part of this object or not in harries for in loop 
+//the line 15 is the default line but this line check wheter the obj element are the part of this object or not in arries for in loop 
 //but in mine the meaning is similiar but it says if not obj is not a part of it the continue i.e leave that element
 //next line stores the value in an variable 
 

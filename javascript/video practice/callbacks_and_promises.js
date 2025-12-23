@@ -30,4 +30,4 @@ function loadscript  (src,callback){
 // here we are calling the function
 loadscript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js",callback)
 // sometimes there are lots of callback in a simulatenious way i.e the there is function which has a callback and that call back function has a callback inside it ans so on
-//this creates a callback hell also  called pyramid of hell in this case we uses the promises.
+//this creates a callback hell also  called pyramid of domm in this case we uses the promises.

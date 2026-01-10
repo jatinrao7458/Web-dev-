@@ -1,6 +1,6 @@
 let obj = {
     a:1,
-    b:"harry"
+    b:"jatin"
 
 }
 console.log(obj);
@@ -16,12 +16,12 @@ let rabbit= {
 rabbit.__proto__=animal
 
 
-//the code in line 20 makes a new class as function
+//the code in line 22 makes a new class as function
 // class is the template of something
 // and object is the values inside it
 class animall{
     constructor(name){
-        // the cod ein the line 25 is the way of making a new property it made a new property named "name"
+        // the code in the line 25 is the way of making a new property it made a new property named "name"
         this.name=name
         console.log('Object is created');
     }

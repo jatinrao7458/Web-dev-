@@ -93,4 +93,4 @@ let newarr_reduce=arr.reduce((a,b)=>{
     return a+b
 })
 console.log(newarr_reduce)
-// the reduce function is works like first adds the fisrt 2 elemnt(cuz here we have passed only 2 parameters if we would have passed 3 parameters then it will bw taking first elements) the after ading the first 2 it add the third elemnt eith the sum of first 2
+// the reduce function is works like first adds the fisrt 2 elemnt(cuz here we have passed only 2 parameters if we would have passed 3 parameters then it will bw taking first 3 elements) the after ading the first 2 it add the third elemnt eith the sum of first 2

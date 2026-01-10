@@ -4,7 +4,7 @@ console.log(arr.toString())
 arr[0 ]= 233
 // console.log(arr)
 // console.log(arr.length)
-console.log(arr.join(" and "))//this linbe joins every element with an and
+console.log(arr.join(" and "))//this line joins every element with an and
 let a1= [4,3,5,6]
 let a2=[1,9,8,7]
 let a3= [4,6,8,9] 

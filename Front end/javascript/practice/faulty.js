@@ -11,9 +11,10 @@ let obj = {
 }
 if (random < 0.1) {
     alert('the result of calculation is ${eval(', $, { a }, $, { c }, $, { b }, ')}')
+}
     else {
         //
         // alert( 'the result of calculation is ${eval(', $,{a} ,$,{c} ,$,{b},')}' )
     c = obj(c)
-alert('the result of calculation is ${eval(', $, { a }, $, { c }, $, { b }, ')}')
-}}
+        alert('the result of calculation is ${eval(', $, { a }, $, { c }, $, { b }, ')}')
+}
